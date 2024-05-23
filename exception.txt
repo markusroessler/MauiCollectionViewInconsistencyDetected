@@ -1,0 +1,137 @@
+Java.Lang.IndexOutOfBoundsException: Inconsistency detected. Invalid view holder adapter positionTemplatedItemViewHolder{6257c03 position=31 id=-1, oldPos=25, pLpos:25 scrap [attachedScrap] tmpDetached no parent} crc645d80431ce5f73f11.MauiRecyclerView_3{caadd54 VFED..... ......I. 0,121-1080,1988}, adapter:crc645d80431ce5f73f11.ReorderableItemsViewAdapter_2@a5ca3ee, layout:androidx.recyclerview.widget.LinearLayoutManager@6ea4384, context:crc64e550a20d138f04c9.MainActivity@6bea620
+  at Java.Interop.JniEnvironment.StaticMethods.CallStaticLongMethod(JniObjectReference type, JniMethodInfo method, JniArgumentValue* args) in /Users/runner/work/1/s/xamarin-android/external/Java.Interop/src/Java.Interop/obj/Release/net7.0/JniEnvironment.g.cs:21705
+  at Java.Interop.JniPeerMembers.JniStaticMethods.InvokeInt64Method(String encodedMember, JniArgumentValue* parameters) in /Users/runner/work/1/s/xamarin-android/external/Java.Interop/src/Java.Interop/Java.Interop/JniPeerMembers.JniStaticMethods.cs:147
+  at Microsoft.Maui.PlatformInterop.MeasureAndGetWidthAndHeight(View view, Int32 widthMeasureSpec, Int32 heightMeasureSpec) in D:\a\_work\1\s\artifacts\obj\Core\Release\net8.0-android\generated\src\Microsoft.Maui.PlatformInterop.cs:580
+  at Microsoft.Maui.ViewHandlerExtensions.GetDesiredSizeFromHandler(IViewHandler viewHandler, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Handlers\ViewHandlerExtensions.Android.cs:93
+  at Microsoft.Maui.Handlers.ViewHandler`2[[Microsoft.Maui.Controls.ReorderableItemsView, Microsoft.Maui.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[AndroidX.RecyclerView.Widget.RecyclerView, Xamarin.AndroidX.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]].GetDesiredSize(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Handlers\View\ViewHandlerOfT.Android.cs:18
+  at Microsoft.Maui.Controls.Handlers.Items.ItemsViewHandler`1[[Microsoft.Maui.Controls.ReorderableItemsView, Microsoft.Maui.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]].GetDesiredSize(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\Handlers\Items\ItemsViewHandler.Android.cs:49
+  at Microsoft.Maui.Layouts.LayoutExtensions.ComputeDesiredSize(IView view, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Layouts\LayoutExtensions.cs:27
+  at Microsoft.Maui.Controls.VisualElement.MeasureOverride(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\VisualElement\VisualElement.cs:1893
+  at Microsoft.Maui.Controls.VisualElement.Microsoft.Maui.IView.Measure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\VisualElement\VisualElement.cs:1880
+  at Microsoft.Maui.Layouts.GridLayoutManager.GridStructure.MeasureCell(Cell cell, Double width, Double height) in D:\a\_work\1\s\src\Core\src\Layouts\GridLayoutManager.cs:383
+  at Microsoft.Maui.Layouts.GridLayoutManager.GridStructure.SecondMeasurePass() in D:\a\_work\1\s\src\Core\src\Layouts\GridLayoutManager.cs:475
+  at Microsoft.Maui.Layouts.GridLayoutManager.GridStructure.MeasureCells() in D:\a\_work\1\s\src\Core\src\Layouts\GridLayoutManager.cs:372
+  at Microsoft.Maui.Layouts.GridLayoutManager.GridStructure..ctor(IGridLayout grid, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Layouts\GridLayoutManager.cs:144
+  at Microsoft.Maui.Layouts.GridLayoutManager.Measure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Layouts\GridLayoutManager.cs:24
+  at Microsoft.Maui.Controls.Layout.CrossPlatformMeasure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\Layout\Layout.cs:354
+  at Microsoft.Maui.Platform.LayoutViewGroup.CrossPlatformMeasure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Platform\Android\LayoutViewGroup.cs:57
+  at Microsoft.Maui.Platform.LayoutViewGroup.OnMeasure(Int32 widthMeasureSpec, Int32 heightMeasureSpec) in D:\a\_work\1\s\src\Core\src\Platform\Android\LayoutViewGroup.cs:82
+  at Android.Views.View.n_OnMeasure_II(IntPtr jnienv, IntPtr native__this, Int32 widthMeasureSpec, Int32 heightMeasureSpec) in /Users/runner/work/1/s/xamarin-android/src/Mono.Android/obj/Release/net8.0/android-34/mcw/Android.Views.View.cs:19598
+  at Android.Runtime.JNINativeWrapper.Wrap_JniMarshal_PPII_V(_JniMarshal_PPII_V callback, IntPtr jnienv, IntPtr klazz, Int32 p0, Int32 p1) in /Users/runner/work/1/s/xamarin-android/src/Mono.Android/Android.Runtime/JNINativeWrapper.g.cs:154
+  at Java.Interop.JniEnvironment.StaticMethods.CallStaticLongMethod(JniObjectReference type, JniMethodInfo method, JniArgumentValue* args) in /Users/runner/work/1/s/xamarin-android/external/Java.Interop/src/Java.Interop/obj/Release/net7.0/JniEnvironment.g.cs:21700
+  at Java.Interop.JniPeerMembers.JniStaticMethods.InvokeInt64Method(String encodedMember, JniArgumentValue* parameters) in /Users/runner/work/1/s/xamarin-android/external/Java.Interop/src/Java.Interop/Java.Interop/JniPeerMembers.JniStaticMethods.cs:147
+  at Microsoft.Maui.PlatformInterop.MeasureAndGetWidthAndHeight(View view, Int32 widthMeasureSpec, Int32 heightMeasureSpec) in D:\a\_work\1\s\artifacts\obj\Core\Release\net8.0-android\generated\src\Microsoft.Maui.PlatformInterop.cs:580
+  at Microsoft.Maui.ViewHandlerExtensions.GetDesiredSizeFromHandler(IViewHandler viewHandler, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Handlers\ViewHandlerExtensions.Android.cs:93
+  at Microsoft.Maui.Handlers.ViewHandler`2[[Microsoft.Maui.ILayout, Microsoft.Maui, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Microsoft.Maui.Platform.LayoutViewGroup, Microsoft.Maui, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]].GetDesiredSize(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Handlers\View\ViewHandlerOfT.Android.cs:18
+  at Microsoft.Maui.Layouts.LayoutExtensions.ComputeDesiredSize(IView view, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Layouts\LayoutExtensions.cs:27
+  at Microsoft.Maui.Controls.VisualElement.MeasureOverride(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\VisualElement\VisualElement.cs:1893
+  at Microsoft.Maui.Controls.VisualElement.Microsoft.Maui.IView.Measure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\VisualElement\VisualElement.cs:1880
+  at Microsoft.Maui.Layouts.LayoutExtensions.MeasureContent(IContentView contentView, Thickness inset, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Layouts\LayoutExtensions.cs:163
+  at Microsoft.Maui.Layouts.LayoutExtensions.MeasureContent(IContentView contentView, Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Layouts\LayoutExtensions.cs:142
+  at Microsoft.Maui.Controls.ContentPage.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Controls\src\Core\ContentPage\ContentPage.cs:85
+  at Microsoft.Maui.Platform.ContentViewGroup.CrossPlatformMeasure(Double widthConstraint, Double heightConstraint) in D:\a\_work\1\s\src\Core\src\Platform\Android\ContentViewGroup.cs:51
+  at Microsoft.Maui.Platform.ContentViewGroup.OnMeasure(Int32 widthMeasureSpec, Int32 heightMeasureSpec) in D:\a\_work\1\s\src\Core\src\Platform\Android\ContentViewGroup.cs:73
+  at Android.Views.View.n_OnMeasure_II(IntPtr jnienv, IntPtr native__this, Int32 widthMeasureSpec, Int32 heightMeasureSpec) in /Users/runner/work/1/s/xamarin-android/src/Mono.Android/obj/Release/net8.0/android-34/mcw/Android.Views.View.cs:19598
+  at Android.Runtime.JNINativeWrapper.Wrap_JniMarshal_PPII_V(_JniMarshal_PPII_V callback, IntPtr jnienv, IntPtr klazz, Int32 p0, Int32 p1) in /Users/runner/work/1/s/xamarin-android/src/Mono.Android/Android.Runtime/JNINativeWrapper.g.cs:154
+  at java.lang.IndexOutOfBoundsException: Inconsistency detected. Invalid view holder adapter positionTemplatedItemViewHolder{6257c03 position=31 id=-1, oldPos=25, pLpos:25 scrap [attachedScrap] tmpDetached no parent} crc645d80431ce5f73f11.MauiRecyclerView_3{caadd54 VFED..... ......I. 0,121-1080,1988}, adapter:crc645d80431ce5f73f11.ReorderableItemsViewAdapter_2@a5ca3ee, layout:androidx.recyclerview.widget.LinearLayoutManager@6ea4384, context:crc64e550a20d138f04c9.MainActivity@6bea620
+  at at androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:6544)
+  at at androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6727)
+  at at androidx.recyclerview.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:6688)
+  at at androidx.recyclerview.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:6684)
+  at at androidx.recyclerview.widget.LinearLayoutManager$LayoutState.next(LinearLayoutManager.java:2362)
+  at at androidx.recyclerview.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1662)
+  at at androidx.recyclerview.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1622)
+  at at androidx.recyclerview.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:687)
+  at at androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4550)
+  at at androidx.recyclerview.widget.RecyclerView.onMeasure(RecyclerView.java:3975)
+  at at android.view.View.measure(View.java:24530)
+  at at com.microsoft.maui.PlatformInterop.measureAndGetWidthAndHeight(PlatformInterop.java:404)
+  at at crc6452ffdc5b34af3a0f.LayoutViewGroup.n_onMeasure(Native Method)
+  at at crc6452ffdc5b34af3a0f.LayoutViewGroup.onMeasure(LayoutViewGroup.java:59)
+  at at android.view.View.measure(View.java:24530)
+  at at com.microsoft.maui.PlatformInterop.measureAndGetWidthAndHeight(PlatformInterop.java:404)
+  at at crc6452ffdc5b34af3a0f.ContentViewGroup.n_onMeasure(Native Method)
+  at at crc6452ffdc5b34af3a0f.ContentViewGroup.onMeasure(ContentViewGroup.java:59)
+  at at android.view.View.measure(View.java:24530)
+  at at crc640ec207abc449b2ca.ShellPageContainer.n_onMeasure(Native Method)
+  at at crc640ec207abc449b2ca.ShellPageContainer.onMeasure(ShellPageContainer.java:66)
+  at at android.view.View.measure(View.java:24530)
+  at at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6828)
+  at at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+  at at android.view.View.measure(View.java:24530)
+  at at androidx.recyclerview.widget.RecyclerView$LayoutManager.measureChildWithMargins(RecyclerView.java:10124)
+  at at androidx.recyclerview.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1688)
+  at at androidx.recyclerview.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1622)
+  at at androidx.recyclerview.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:687)
+  at at androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4604)
+  at at androidx.recyclerview.widget.RecyclerView.dispatchLayout(RecyclerView.java:4307)
+  at at androidx.recyclerview.widget.RecyclerView.onLayout(RecyclerView.java:4873)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at androidx.viewpager2.widget.ViewPager2.onLayout(ViewPager2.java:527)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at com.google.android.material.appbar.HeaderScrollingViewBehavior.layoutChild(HeaderScrollingViewBehavior.java:149)
+  at at com.google.android.material.appbar.ViewOffsetBehavior.onLayoutChild(ViewOffsetBehavior.java:43)
+  at at com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior.onLayoutChild(AppBarLayout.java:2376)
+  at at androidx.coordinatorlayout.widget.CoordinatorLayout.onLayout(CoordinatorLayout.java:953)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+  at at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1829)
+  at at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+  at at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+  at at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at androidx.drawerlayout.widget.DrawerLayout.onLayout(DrawerLayout.java:1273)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1829)
+  at at android.widget.LinearLayout.layoutHorizontal(LinearLayout.java:1818)
+  at at android.widget.LinearLayout.onLayout(LinearLayout.java:1584)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+  at at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+  at at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+  at at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1829)
+  at at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1673)
+  at at android.widget.LinearLayout.onLayout(LinearLayout.java:1582)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.widget.FrameLayout.layoutChildren(FrameLayout.java:332)
+  at at android.widget.FrameLayout.onLayout(FrameLayout.java:270)
+  at at com.android.internal.policy.DecorView.onLayout(DecorView.java:779)
+  at at android.view.View.layout(View.java:21912)
+  at at android.view.ViewGroup.layout(ViewGroup.java:6260)
+  at at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:3080)
+  at at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2590)
+  at at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1721)
+  at at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7598)
+  at at android.view.Choreographer$CallbackRecord.run(Choreographer.java:966)
+  at at android.view.Choreographer.doCallbacks(Choreographer.java:790)
+  at at android.view.Choreographer.doFrame(Choreographer.java:725)
+  at at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:951)
+  at at android.os.Handler.handleCallback(Handler.java:883)
+  at at android.os.Handler.dispatchMessage(Handler.java:100)
+  at at android.os.Looper.loop(Looper.java:214)
+  at at android.app.ActivityThread.main(ActivityThread.java:7356)
+  at at java.lang.reflect.Method.invoke(Native Method)
+  at at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+  at at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
