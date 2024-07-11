@@ -21,9 +21,22 @@ public partial class MainPage : ContentPage
 
     async void AddItems_Clicked(System.Object sender, System.EventArgs e)
     {
-        Console.WriteLine("Adding groups");
-        Items.Add(new GroupItemVO { Title = "Group 1" });
-        Items.Add(new GroupItemVO { Title = "Group 2" });
+        if (Items.Count == 0)
+        {
+            Console.WriteLine("Adding groups");
+            var grp = new GroupItemVO { Title = "Group 1" };
+            grp.Add($"Item x");
+            Items.Add(grp);
+
+            await Task.Delay(2000);
+
+            grp = new GroupItemVO { Title = "Group 2" };
+            grp.Add($"Item x");
+            Items.Add(grp);
+        }
+
+        await Task.Delay(2000);
+        Items[0].Add($"Item x");
 
         //Console.WriteLine("Adding group 1 items");
         //Items[0].Add("Item 1");
@@ -31,13 +44,12 @@ public partial class MainPage : ContentPage
         //Items[0].Add("Item 3");
         //Items[0].Add("Item 4");
 
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Adding group 2 item");
-            Items[0].Add($"Item {i}");
-            Items[1].Add($"Item {i}");
-            // await Task.Delay(1000);
-        }
+        // for (int i = 0; i < 10; i++)
+        // {
+        //     Console.WriteLine("Adding group 2 item");
+        //     Items[0].Add($"Item {i}");
+        //     // Items[1].Add($"Item {i}");
+        // }
     }
 }
 
